@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD iBatis Mapper 3.0 //EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="hsj.czy.mybatisframe.mapper.BaseMapper">
+<!-- 保存 -->
+<insert id="save" parameterType="java.util.Map" useGeneratedKeys="true" keyProperty="id">
+	<![CDATA[
+		INSERT INTO ${TABLE}(
+			${COLUMN}
+		)
+		VALUES(
+			${VALUE}
+		)
+	]]>
+</insert>
+
+<!-- 根据id获取对象 -->
+<select id="get" parameterType="java.util.Map" resultType="hashmap">
+	SELECT * FROM ${TABLE} T WHERE T.${ID_COLUMN} = #{id}
+</select>
+
+<!-- 根据id获取对象 -->
+<select id="getObject" parameterType="java.util.Map" resultType="hashmap">
+	SELECT * FROM (
+		SELECT ROWNUM AS RN, T.* FROM(
+			SELECT * FROM ${TABLE} T WHERE 1=1 ${WHERE}
+		) T
+	) PGRS WHERE PGRS.RN &gt;0 AND PGRS.RN &lt;= 1 
+</select>
+<!-- 根据id获取对象 -->
+<select id="getObjectList" parameterType="java.util.Map" resultType="hashmap">
+	SELECT * FROM ${TABLE} T WHERE 1=1 ${WHERE} <if test="ORDERBY != null">${ORDERBY}</if>
+</select>
+
+<select id="getObjectListCount" parameterType="java.util.Map" resultType="Long">
+	SELECT count(*) FROM ${TABLE} T WHERE 1=1 ${WHERE}
+</select>
+
+<!-- 获取所有对象 -->
+<select id="getAllList" parameterType="java.util.Map" resultType="hashmap">
+	SELECT * FROM ${TABLE};
+</select>
+
+<!-- 更新对象 -->
+<update id="update" parameterType="java.util.Map">
+	UPDATE ${TABLE} T SET
+	${SET_VALUE}
+	where t.${ID_COLUMN} = #{id}
+</update>
+
+<!-- 删除对象 -->
+<delete id="delete" parameterType="java.util.Map">
+	DELETE FROM ${TABLE} WHERE ${ID_COLUMN} = #{id}
+</delete>
+
+
+<select id="getPager" parameterType="java.util.Map" resultType="hashmap">
+	SELECT * FROM (
+		SELECT ROWNUM AS RN, T.* FROM(
+			SELECT * FROM ${TABLE} T WHERE 1 = 1 ${WHERE}
+		) T
+	) PGRS WHERE PGRS.RN &gt;${STARTPOSITION} AND PGRS.RN &lt;= ${ENDPOSITION} 
+</select>
+
+
+<select id="getPagerCount" parameterType="java.util.Map" resultType="Long">
+	SELECT COUNT(*) FROM ${TABLE} T WHERE 1 = 1
+	${WHERE}
+</select>
+
+<select id="getPagerBySql" parameterType="java.util.Map" resultType="hashmap">
+	SELECT * FROM (
+		SELECT ROWNUM AS RN, T.* FROM(
+			${SQL}
+		) T WHERE ROWNUM &lt;= ${ENDPOSITION}
+	) PGRS WHERE PGRS.RN &gt;= ${STARTPOSITION} 
+</select>
+
+
+<select id="getPagerCountBySql" parameterType="java.util.Map" resultType="Long">
+	SELECT COUNT(*) FROM (${SQL})
+</select>
+
+<select id="queryBySql" parameterType="java.util.Map" resultType="hashmap">
+	${SQL}
+</select>
+
+<update id="executeBySql" parameterType="java.util.Map">
+	${SQL}
+</update>
+
+<!-- <select id="queryListBySqlCount" parameterType="java.util.Map" resultType="Long"> -->
+<!-- 	${SQL} -->
+<!-- </select> -->
+
+</mapper>

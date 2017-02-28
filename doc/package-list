@@ -1,0 +1,11 @@
+hsj.czy.mybatisframe.annotation
+hsj.czy.mybatisframe.bean
+hsj.czy.mybatisframe.configurer
+hsj.czy.mybatisframe.core
+hsj.czy.mybatisframe.entity
+hsj.czy.mybatisframe.exception
+hsj.czy.mybatisframe.listener
+hsj.czy.mybatisframe.mapper
+hsj.czy.mybatisframe.service
+hsj.czy.mybatisframe.service.impl
+hsj.czy.mybatisframe.util

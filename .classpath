@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="/ChbatisFrame-Sample/base-lib/c3p0-0.9.2.1.jar"/>
+	<classpathentry kind="lib" path="/ChbatisFrame-Sample/base-lib/chbatisframe.2.0.jar" sourcepath=""/>
+	<classpathentry kind="lib" path="/ChbatisFrame-Sample/base-lib/commons-beanutils-1.8.0.jar"/>
+	<classpathentry kind="lib" path="/ChbatisFrame-Sample/base-lib/commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="/ChbatisFrame-Sample/base-lib/commons-lang-2.4.jar"/>
+	<classpathentry kind="lib" path="/ChbatisFrame-Sample/base-lib/commons-lang3-3.1.jar"/>
+	<classpathentry kind="lib" path="/ChbatisFrame-Sample/base-lib/commons-logging-1.1.3.jar"/>
+	<classpathentry kind="lib" path="/ChbatisFrame-Sample/base-lib/commons-pool-1.6.jar"/>
+	<classpathentry kind="lib" path="/ChbatisFrame-Sample/base-lib/commons-pool2-2.3.jar"/>
+	<classpathentry kind="lib" path="/ChbatisFrame-Sample/base-lib/ezmorph-1.0.6.jar"/>
+	<classpathentry kind="lib" path="/ChbatisFrame-Sample/base-lib/json-lib-2.4-jdk15.jar"/>
+	<classpathentry kind="lib" path="/ChbatisFrame-Sample/base-lib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="/ChbatisFrame-Sample/base-lib/mchange-commons-java-0.2.3.4.jar"/>
+	<classpathentry kind="lib" path="/ChbatisFrame-Sample/base-lib/mybatis-3.2.8.jar"/>
+	<classpathentry kind="lib" path="/ChbatisFrame-Sample/base-lib/mybatis-spring-1.2.2.jar"/>
+	<classpathentry kind="lib" path="/ChbatisFrame-Sample/base-lib/mysql-5.0.5.jar"/>
+	<classpathentry kind="lib" path="/ChbatisFrame-Sample/base-lib/spring-aop-4.3.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/ChbatisFrame-Sample/base-lib/spring-aspects-4.3.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/ChbatisFrame-Sample/base-lib/spring-beans-4.3.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/ChbatisFrame-Sample/base-lib/spring-context-4.3.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/ChbatisFrame-Sample/base-lib/spring-context-support-4.3.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/ChbatisFrame-Sample/base-lib/spring-core-4.3.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/ChbatisFrame-Sample/base-lib/spring-expression-4.3.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/ChbatisFrame-Sample/base-lib/spring-instrument-4.3.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/ChbatisFrame-Sample/base-lib/spring-instrument-tomcat-4.3.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/ChbatisFrame-Sample/base-lib/spring-jdbc-4.3.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/ChbatisFrame-Sample/base-lib/spring-jms-4.3.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/ChbatisFrame-Sample/base-lib/spring-messaging-4.3.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/ChbatisFrame-Sample/base-lib/spring-orm-4.3.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/ChbatisFrame-Sample/base-lib/spring-oxm-4.3.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/ChbatisFrame-Sample/base-lib/spring-test-4.3.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/ChbatisFrame-Sample/base-lib/spring-tx-4.3.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/ChbatisFrame-Sample/base-lib/spring-web-4.3.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/ChbatisFrame-Sample/base-lib/spring-webmvc-4.3.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/ChbatisFrame-Sample/base-lib/spring-webmvc-portlet-4.3.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/ChbatisFrame-Sample/base-lib/spring-websocket-4.3.5.RELEASE.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
